@@ -1,0 +1,58 @@
+body {
+    color: orange;
+}
+
+.inner-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+/******************** header ********************/
+
+header {
+    background-color: pink;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+header a {
+    color: aqua;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.75rem;
+}
+
+@media screen and (min-width: 900px) {
+    .inner-container {
+        display: flex; 
+        justify-content: space-between;
+        text-align: center;
+        gap: 2%;
+    }
+
+    header ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    section {
+        width: calc(96%/3);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .inner-container {
+        padding: 0;
+    }
+}
